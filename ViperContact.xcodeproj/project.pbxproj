@@ -119,11 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				E576340E20A98405001D237D /* AppDelegate.swift */,
-				E576341520A98405001D237D /* Assets.xcassets */,
-				E576341720A98405001D237D /* LaunchScreen.storyboard */,
 				E576341A20A98405001D237D /* Info.plist */,
-				E576348F20A99F14001D237D /* CoreDataStack.swift */,
-				E576349120A9A0E1001D237D /* ViperContact.xcdatamodeld */,
 				E576342020A9859C001D237D /* Modules */,
 			);
 			path = ViperContact;
@@ -132,6 +128,7 @@
 		E576342020A9859C001D237D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E57634B320A9E888001D237D /* Commons */,
 				E576342320A985C3001D237D /* AddNewContact */,
 				E576342220A985BA001D237D /* DetailContact */,
 				E576342120A985AD001D237D /* TableContacts */,
@@ -169,11 +166,11 @@
 		E576342420A985F0001D237D /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				E576343420A98776001D237D /* ContactTableVC.swift */,
-				E576343A20A98827001D237D /* TableContactInteractor.swift */,
-				E576343820A98808001D237D /* TableContactPresenter.swift */,
-				E576343C20A9884D001D237D /* TableContactDataManager.swift */,
-				E576343620A987E3001D237D /* TableContactRouter.swift */,
+				E57634B120A9E80A001D237D /* View */,
+				E57634A220A9E797001D237D /* Interactor */,
+				E57634A620A9E7BB001D237D /* Presenter */,
+				E57634AB20A9E7DF001D237D /* Entity */,
+				E57634AA20A9E7D8001D237D /* Router */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -181,12 +178,11 @@
 		E576342520A985FB001D237D /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				E576346020A994D7001D237D /* DetailContactViewController.swift */,
-				E576346120A994D7001D237D /* DetailContactViewController.xib */,
-				E576346620A995BE001D237D /* DetailContactInteractor.swift */,
-				E576346420A995A0001D237D /* DetailContactPresenter.swift */,
-				E576346820A995D6001D237D /* DetailContactRouter.swift */,
-				E576346A20A995FC001D237D /* DetailContactDataManager.swift */,
+				E57634AF20A9E7FC001D237D /* View */,
+				E57634A020A9E789001D237D /* Interactor */,
+				E57634A420A9E7AD001D237D /* Presenter */,
+				E57634AD20A9E7EF001D237D /* Entity */,
+				E57634A820A9E7CD001D237D /* Router */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -194,12 +190,11 @@
 		E576342620A985FF001D237D /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				E576344A20A98D97001D237D /* AddNewContactViewController.swift */,
-				E576344B20A98D97001D237D /* AddNewContactViewController.xib */,
-				E576344E20A98DD8001D237D /* AddNewContactInteractor.swift */,
-				E576345020A98DF0001D237D /* AddNewContactPresenter.swift */,
-				E576345420A98E3F001D237D /* AddNewContactDataManager.swift */,
-				E576345220A98E14001D237D /* AddNewContactRouter.swift */,
+				E576349920A9E740001D237D /* View */,
+				E576349A20A9E748001D237D /* Interactor */,
+				E576349B20A9E752001D237D /* Presenter */,
+				E576349C20A9E75C001D237D /* Entity */,
+				E576349D20A9E764001D237D /* Router */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -207,11 +202,11 @@
 		E576342720A98603001D237D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E576344020A98C77001D237D /* AddNewContactViewProtocol.swift */,
-				E576344420A98C98001D237D /* AddNewContactInteractorProtocol.swift */,
-				E576344620A98CB1001D237D /* AddNewContactPresenterProtocol.swift */,
-				E576344820A98CC5001D237D /* AddNewContactDataManagerProtocol.swift */,
-				E576344220A98C86001D237D /* AddNewContactRouterProtocol.swift */,
+				E576349420A9E706001D237D /* View */,
+				E576349520A9E710001D237D /* Interactor */,
+				E576349620A9E71E001D237D /* Presenter */,
+				E576349720A9E728001D237D /* Entity */,
+				E576349820A9E730001D237D /* Router */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -219,11 +214,11 @@
 		E576342820A9860A001D237D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E576345A20A9948F001D237D /* DetailContactViewProtocol.swift */,
-				E576345620A99463001D237D /* DetailContactInteractorProtocol.swift */,
-				E576345820A9947A001D237D /* DetailContactPresenterProtocol.swift */,
-				E576345C20A994A2001D237D /* DetailContactRouterProtocol.swift */,
-				E576345E20A994BD001D237D /* DetailContactDataManagerProtocol.swift */,
+				E576349E20A9E778001D237D /* View */,
+				E576349F20A9E77F001D237D /* Interactor */,
+				E57634A320A9E79E001D237D /* Presenter */,
+				E57634AE20A9E7F6001D237D /* Entity */,
+				E57634A720A9E7C3001D237D /* Router */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -231,13 +226,274 @@
 		E576342920A98615001D237D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E576342A20A98632001D237D /* TableContactInteractorProtocol.swift */,
-				E576342C20A98648001D237D /* TableContactPresenterProtocol.swift */,
-				E576342E20A9865B001D237D /* TableContactViewProtocol.swift */,
-				E576343020A98680001D237D /* TableContactRouterProtocol.swift */,
-				E576343220A98695001D237D /* TableContactDataManagerProtocol.swift */,
+				E57634B020A9E806001D237D /* View */,
+				E57634A120A9E791001D237D /* Interactor */,
+				E57634A520A9E7B4001D237D /* Presenter */,
+				E57634AC20A9E7E8001D237D /* Entity */,
+				E57634A920A9E7D4001D237D /* Router */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E576349420A9E706001D237D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E576344020A98C77001D237D /* AddNewContactViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E576349520A9E710001D237D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E576344420A98C98001D237D /* AddNewContactInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E576349620A9E71E001D237D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E576344620A98CB1001D237D /* AddNewContactPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E576349720A9E728001D237D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E576344820A98CC5001D237D /* AddNewContactDataManagerProtocol.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E576349820A9E730001D237D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E576344220A98C86001D237D /* AddNewContactRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E576349920A9E740001D237D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E576344A20A98D97001D237D /* AddNewContactViewController.swift */,
+				E576344B20A98D97001D237D /* AddNewContactViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E576349A20A9E748001D237D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E576344E20A98DD8001D237D /* AddNewContactInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E576349B20A9E752001D237D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E576345020A98DF0001D237D /* AddNewContactPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E576349C20A9E75C001D237D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E576345420A98E3F001D237D /* AddNewContactDataManager.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E576349D20A9E764001D237D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E576345220A98E14001D237D /* AddNewContactRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E576349E20A9E778001D237D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E576345A20A9948F001D237D /* DetailContactViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E576349F20A9E77F001D237D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E576345620A99463001D237D /* DetailContactInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E57634A020A9E789001D237D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E576346620A995BE001D237D /* DetailContactInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E57634A120A9E791001D237D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E576342A20A98632001D237D /* TableContactInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E57634A220A9E797001D237D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E576343A20A98827001D237D /* TableContactInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E57634A320A9E79E001D237D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E576345820A9947A001D237D /* DetailContactPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E57634A420A9E7AD001D237D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E576346420A995A0001D237D /* DetailContactPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E57634A520A9E7B4001D237D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E576342C20A98648001D237D /* TableContactPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E57634A620A9E7BB001D237D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E576343820A98808001D237D /* TableContactPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E57634A720A9E7C3001D237D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E576345C20A994A2001D237D /* DetailContactRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E57634A820A9E7CD001D237D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E576346820A995D6001D237D /* DetailContactRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E57634A920A9E7D4001D237D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E576343020A98680001D237D /* TableContactRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E57634AA20A9E7D8001D237D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E576343620A987E3001D237D /* TableContactRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E57634AB20A9E7DF001D237D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E576343C20A9884D001D237D /* TableContactDataManager.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E57634AC20A9E7E8001D237D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E576343220A98695001D237D /* TableContactDataManagerProtocol.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E57634AD20A9E7EF001D237D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E576346A20A995FC001D237D /* DetailContactDataManager.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E57634AE20A9E7F6001D237D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E576345E20A994BD001D237D /* DetailContactDataManagerProtocol.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		E57634AF20A9E7FC001D237D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E576346020A994D7001D237D /* DetailContactViewController.swift */,
+				E576346120A994D7001D237D /* DetailContactViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E57634B020A9E806001D237D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E576342E20A9865B001D237D /* TableContactViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E57634B120A9E80A001D237D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E576343420A98776001D237D /* ContactTableVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E57634B220A9E87C001D237D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E576348F20A99F14001D237D /* CoreDataStack.swift */,
+				E576349120A9A0E1001D237D /* ViperContact.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		E57634B320A9E888001D237D /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				E576341720A98405001D237D /* LaunchScreen.storyboard */,
+				E576341520A98405001D237D /* Assets.xcassets */,
+				E57634B220A9E87C001D237D /* CoreData */,
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
