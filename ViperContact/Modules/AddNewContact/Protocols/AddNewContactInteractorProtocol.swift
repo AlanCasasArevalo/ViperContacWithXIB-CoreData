@@ -7,8 +7,12 @@
 //
 
 import Foundation
+import CoreData
 
 protocol AddNewContactInteractorProtocol {
     var presenter: AddNewContactPresenterProtocol? { get set }
+    var context: NSManagedObjectContext? { get set }
+    
+    func addNewContact(name: String, surname: String) 
 
 }

@@ -7,12 +7,19 @@
 //
 
 import Foundation
+import CoreData
 
 class TableContactPresenter: TableContactPresenterProtocol {
-    
+
     var view: TableContactViewProtocol?
     var interactor: TableContactInteractorProtocol?
     var router: TableContactRouterProtocol?
+
+    var context: NSManagedObjectContext?
+
+    init(context: NSManagedObjectContext?) {
+        self.context = context
+    }
     
     func navigationToAddNewContact() {
         router?.navigationToAddNewContact()

@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 protocol TableContactRouterProtocol {
     var view: TableContactViewProtocol? { get set }
     var interactor: TableContactInteractorProtocol? { get set }
     var presenter: TableContactPresenterProtocol? { get set }
-    
+    var context: NSManagedObjectContext? { get set }
+
     var navigationController: UINavigationController? { get set }
     
     func navigationToAddNewContact ()

@@ -15,6 +15,7 @@ class DetailContactRouter: DetailContactRouterProtocol {
     var presenter: DetailContactPresenterProtocol? = DetailContactPresenter()
     
     init() {
+        
         view?.presenter = presenter
         presenter?.view = view
         

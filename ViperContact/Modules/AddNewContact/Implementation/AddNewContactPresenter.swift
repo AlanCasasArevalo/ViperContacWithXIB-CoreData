@@ -14,5 +14,8 @@ class AddNewContactPresenter: AddNewContactPresenterProtocol {
     var interactor: AddNewContactInteractorProtocol?
     var router: AddNewContactRouterProtocol?
     
+    func addNewContact(name: String, surname: String) {
+        interactor?.addNewContact(name: name, surname: surname)
+    }
     
 }

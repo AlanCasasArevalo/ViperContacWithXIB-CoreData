@@ -7,20 +7,26 @@
 //
 
 import Foundation
+import CoreData
 
 class AddNewContactRouter: AddNewContactRouterProtocol {
     
     var view: AddNewContactViewProtocol? = AddNewContactViewController()
     var interactor: AddNewContactInteractorProtocol? = AddNewContactInteractor()
     var presenter: AddNewContactPresenterProtocol? = AddNewContactPresenter()
+    var context: NSManagedObjectContext?
     
-    init() {
+    init( context: NSManagedObjectContext? ) {
         
         view?.presenter = presenter
         presenter?.view = view
         
         interactor?.presenter = presenter
         presenter?.interactor = interactor
+        
+        interactor?.context = context
+        
+        self.context = context
         
         presenter?.router = self
     }

@@ -7,7 +7,11 @@
 //
 
 import Foundation
+import CoreData
 
 protocol TableContactDataManagerProtocol {
+    var contacts: [Contact]? { get set }
+    var context: NSManagedObjectContext? { get set }
     
+    func getContactFromCoreData () -> [Contact]
 }

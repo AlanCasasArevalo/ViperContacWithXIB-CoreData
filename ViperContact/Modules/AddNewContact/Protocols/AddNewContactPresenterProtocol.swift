@@ -12,4 +12,6 @@ protocol AddNewContactPresenterProtocol {
     var view: AddNewContactViewProtocol? { get set }
     var interactor: AddNewContactInteractorProtocol? { get set }
     var router: AddNewContactRouterProtocol? { get set }
+    
+    func addNewContact(name: String, surname: String)
 }

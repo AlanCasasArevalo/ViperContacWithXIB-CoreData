@@ -7,8 +7,34 @@
 //
 
 import Foundation
+import CoreData
 
 class AddNewContactInteractor: AddNewContactInteractorProtocol {
+    
+    var context: NSManagedObjectContext?
     var presenter: AddNewContactPresenterProtocol?
     
+    func addNewContact(name: String, surname: String) {
+
+        if !name.isEmpty && !surname.isEmpty {
+            // TODO: Add new contact to CoreData
+            
+            
+            if let newContact = NSEntityDescription.entity(forEntityName: "Contact", in: context!) {
+                let contact = Contact(entity: newContact, insertInto: context)
+                contact.name = name
+                contact.surname = surname
+                
+                // TODO: Try Catch to save new contact
+                do{
+                    try context?.save()
+                }catch let error as NSError {
+                    print(error)
+                }
+                
+            }
+            
+        }
+        
+    }
 }

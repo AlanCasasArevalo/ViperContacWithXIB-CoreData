@@ -7,16 +7,24 @@
 //
 
 import UIKit
+import CoreData
 
 class TableContactRouter: TableContactRouterProtocol {
-    
+
+    var context: NSManagedObjectContext?
+
     var view: TableContactViewProtocol? = ContactTableVC()
     var interactor: TableContactInteractorProtocol? = TableContactInteractor()
-    var presenter: TableContactPresenterProtocol? = TableContactPresenter()
+    var presenter: TableContactPresenterProtocol? 
 
     var navigationController: UINavigationController?
     
-    init() {
+    init(context: NSManagedObjectContext?) {
+        
+        self.context = context
+        
+        presenter = TableContactPresenter(context: context)
+        
         view?.presenter = presenter
         presenter?.view = view
         
@@ -29,7 +37,8 @@ class TableContactRouter: TableContactRouterProtocol {
     }
     
     func navigationToAddNewContact() {
-        let addNewContactRouter = AddNewContactRouter()
+        
+        let addNewContactRouter = AddNewContactRouter(context: context)
         
         navigationController?.pushViewController(addNewContactRouter.view as! AddNewContactViewController, animated: true)
     }

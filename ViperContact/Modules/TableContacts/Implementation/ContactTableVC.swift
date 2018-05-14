@@ -22,7 +22,7 @@ class ContactTableVC: UITableViewController, TableContactViewProtocol {
         let addNewPersonButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewPersonAction))
 
         navigationItem.rightBarButtonItem = addNewPersonButton
-        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,9 +51,11 @@ class ContactTableVC: UITableViewController, TableContactViewProtocol {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let dummyContactDetail = Contact(name: "Test0", surname: "Test0")
         
-        presenter?.navigationToDetail(contactDetail: dummyContactDetail)
+        // TODO: Do something with table 
+//        let dummyContactDetail = Contact(entity: "Test0", insertInto: "Test0")
+        
+//        presenter?.navigationToDetail(contactDetail: dummyContactDetail)
     }
 
     @objc func addNewPersonAction (){

@@ -42,7 +42,8 @@
 		E576346720A995BE001D237D /* DetailContactInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576346620A995BE001D237D /* DetailContactInteractor.swift */; };
 		E576346920A995D6001D237D /* DetailContactRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576346820A995D6001D237D /* DetailContactRouter.swift */; };
 		E576346B20A995FC001D237D /* DetailContactDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576346A20A995FC001D237D /* DetailContactDataManager.swift */; };
-		E576346D20A996AF001D237D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576346C20A996AF001D237D /* Contact.swift */; };
+		E576349020A99F14001D237D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576348F20A99F14001D237D /* CoreDataStack.swift */; };
+		E576349320A9A0E1001D237D /* ViperContact.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E576349120A9A0E1001D237D /* ViperContact.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,7 +84,8 @@
 		E576346620A995BE001D237D /* DetailContactInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactInteractor.swift; sourceTree = "<group>"; };
 		E576346820A995D6001D237D /* DetailContactRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactRouter.swift; sourceTree = "<group>"; };
 		E576346A20A995FC001D237D /* DetailContactDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactDataManager.swift; sourceTree = "<group>"; };
-		E576346C20A996AF001D237D /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		E576348F20A99F14001D237D /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		E576349220A9A0E1001D237D /* ViperContact.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViperContact.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +122,8 @@
 				E576341520A98405001D237D /* Assets.xcassets */,
 				E576341720A98405001D237D /* LaunchScreen.storyboard */,
 				E576341A20A98405001D237D /* Info.plist */,
-				E576346C20A996AF001D237D /* Contact.swift */,
+				E576348F20A99F14001D237D /* CoreDataStack.swift */,
+				E576349120A9A0E1001D237D /* ViperContact.xcdatamodeld */,
 				E576342020A9859C001D237D /* Modules */,
 			);
 			path = ViperContact;
@@ -332,6 +335,7 @@
 				E576344520A98C98001D237D /* AddNewContactInteractorProtocol.swift in Sources */,
 				E576344320A98C86001D237D /* AddNewContactRouterProtocol.swift in Sources */,
 				E576345920A9947A001D237D /* DetailContactPresenterProtocol.swift in Sources */,
+				E576349020A99F14001D237D /* CoreDataStack.swift in Sources */,
 				E576343720A987E3001D237D /* TableContactRouter.swift in Sources */,
 				E576342D20A98648001D237D /* TableContactPresenterProtocol.swift in Sources */,
 				E576344F20A98DD8001D237D /* AddNewContactInteractor.swift in Sources */,
@@ -340,13 +344,13 @@
 				E576343B20A98827001D237D /* TableContactInteractor.swift in Sources */,
 				E576343320A98695001D237D /* TableContactDataManagerProtocol.swift in Sources */,
 				E576342B20A98632001D237D /* TableContactInteractorProtocol.swift in Sources */,
+				E576349320A9A0E1001D237D /* ViperContact.xcdatamodeld in Sources */,
 				E576346920A995D6001D237D /* DetailContactRouter.swift in Sources */,
 				E576345520A98E3F001D237D /* AddNewContactDataManager.swift in Sources */,
 				E576344920A98CC5001D237D /* AddNewContactDataManagerProtocol.swift in Sources */,
 				E576346B20A995FC001D237D /* DetailContactDataManager.swift in Sources */,
 				E576345F20A994BD001D237D /* DetailContactDataManagerProtocol.swift in Sources */,
 				E576344720A98CB1001D237D /* AddNewContactPresenterProtocol.swift in Sources */,
-				E576346D20A996AF001D237D /* Contact.swift in Sources */,
 				E576345B20A9948F001D237D /* DetailContactViewProtocol.swift in Sources */,
 				E576343920A98808001D237D /* TableContactPresenter.swift in Sources */,
 				E576345720A99463001D237D /* DetailContactInteractorProtocol.swift in Sources */,
@@ -545,6 +549,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E576349120A9A0E1001D237D /* ViperContact.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E576349220A9A0E1001D237D /* ViperContact.xcdatamodel */,
+			);
+			currentVersion = E576349220A9A0E1001D237D /* ViperContact.xcdatamodel */;
+			path = ViperContact.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E576340320A98405001D237D /* Project object */;
 }

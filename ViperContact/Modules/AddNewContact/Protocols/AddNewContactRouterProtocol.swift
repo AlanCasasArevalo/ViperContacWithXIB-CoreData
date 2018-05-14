@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
 protocol AddNewContactRouterProtocol {
     var view: AddNewContactViewProtocol? { get set }
     var interactor: AddNewContactInteractorProtocol? { get set }
     var presenter: AddNewContactPresenterProtocol? { get set }
+    
+    var context: NSManagedObjectContext? { get set }
 }

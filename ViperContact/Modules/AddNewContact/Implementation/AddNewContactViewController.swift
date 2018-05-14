@@ -12,14 +12,28 @@ class AddNewContactViewController: UIViewController, AddNewContactViewProtocol {
     
     var presenter: AddNewContactPresenterProtocol?
 
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var surnameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Add contact"
+
+        setupUI()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    @objc func saveNewContactAction() {
+        presenter?.addNewContact(name: nameTextField.text!, surname: surnameTextField.text!)
+    }
+    
+    func setupUI () {
+        title = "Add contact"
+        let saveNewContactButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveNewContactAction))
+        navigationItem.rightBarButtonItem = saveNewContactButton
+    }
+        
 }

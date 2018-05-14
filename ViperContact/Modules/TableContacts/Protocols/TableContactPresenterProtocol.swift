@@ -7,12 +7,16 @@
 //
 
 import Foundation
+import CoreData
 
 protocol TableContactPresenterProtocol {
+    
     var view: TableContactViewProtocol? { get set }
     var interactor: TableContactInteractorProtocol? { get set }
     var router: TableContactRouterProtocol? { get set }
 
+    var context: NSManagedObjectContext? { get set }
+    
     func navigationToAddNewContact()
     
     func navigationToDetail ( contactDetail: Contact ) 
