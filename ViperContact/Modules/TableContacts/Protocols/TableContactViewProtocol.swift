@@ -9,5 +9,8 @@
 import Foundation
 
 protocol TableContactViewProtocol {
+    var contacts: [Contact]? { get set }
     var presenter: TableContactPresenterProtocol? { get set }
+    
+    func setTableViewWithData( contacts: [Contact] )
 }

@@ -12,4 +12,5 @@ protocol DetailContactPresenterProtocol {
     var view: DetailContactViewProtocol? { get set }
     var interactor: DetailContactInteractorProtocol? { get set }
     var router: DetailContactRouterProtocol? { get set }
+    
 }

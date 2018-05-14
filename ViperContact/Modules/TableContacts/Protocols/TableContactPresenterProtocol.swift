@@ -19,6 +19,11 @@ protocol TableContactPresenterProtocol {
     
     func navigationToAddNewContact()
     
-    func navigationToDetail ( contactDetail: Contact ) 
+    func navigationToDetail ( contactDetail: Contact )
+    
+    func getContactsFromCoreData ( contacts: [Contact] )
+    
+    func getContactsFromCoreData() 
+
 
 }

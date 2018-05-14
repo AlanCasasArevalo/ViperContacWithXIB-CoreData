@@ -7,8 +7,30 @@
 //
 
 import Foundation
+import CoreData
 
 class TableContactInteractor: TableContactInteractorProtocol {
+    
+    var contacts: [Contact]?
+    var context: NSManagedObjectContext?
     var presenter: TableContactPresenterProtocol?
+
+    init(context: NSManagedObjectContext?) {
+        self.context = context
+    }
+    
+    func getContactsFromCoreData() {
+        
+        let fetchRequest: NSFetchRequest<Contact>  = Contact.fetchRequest()
+        
+        do {
+            contacts = try context?.fetch(fetchRequest)
+            presenter?.getContactsFromCoreData(contacts: contacts!)
+        } catch let error as NSError {
+            print(error)
+            presenter?.getContactsFromCoreData(contacts: [Contact]() )
+        }
+
+    }
     
 }

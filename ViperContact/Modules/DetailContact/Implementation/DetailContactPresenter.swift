@@ -13,6 +13,5 @@ class DetailContactPresenter: DetailContactPresenterProtocol {
     var view: DetailContactViewProtocol?
     var interactor: DetailContactInteractorProtocol?
     var router: DetailContactRouterProtocol?
-    
-    
+
 }

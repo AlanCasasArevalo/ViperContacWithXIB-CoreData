@@ -29,4 +29,12 @@ class TableContactPresenter: TableContactPresenterProtocol {
         router?.navigationToDetail(contactDetail: contactDetail)
     }
     
+    func getContactsFromCoreData(contacts: [Contact]) {
+        view?.setTableViewWithData(contacts: contacts)
+    }
+    
+    func getContactsFromCoreData() {
+        interactor?.getContactsFromCoreData()
+    }
+    
 }

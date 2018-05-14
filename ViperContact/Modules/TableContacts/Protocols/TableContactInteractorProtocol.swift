@@ -7,7 +7,16 @@
 //
 
 import Foundation
+import CoreData
 
 protocol TableContactInteractorProtocol {
+    
+    var context: NSManagedObjectContext? { get set }
+    
     var presenter: TableContactPresenterProtocol? { get set }
+    
+    var contacts: [Contact]? { get set }
+    
+    func getContactsFromCoreData() 
+
 }

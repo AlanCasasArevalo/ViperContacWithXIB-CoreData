@@ -11,4 +11,7 @@ import Foundation
 protocol DetailContactViewProtocol {
     var presenter: DetailContactPresenterProtocol? { get set }
     var contactDetail: Contact? { get set }
+    
+    func setupUIWithPresenter ( contactDetail: Contact ) 
+
 }

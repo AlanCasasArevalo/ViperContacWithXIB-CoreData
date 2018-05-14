@@ -28,6 +28,7 @@ class AddNewContactViewController: UIViewController, AddNewContactViewProtocol {
     
     @objc func saveNewContactAction() {
         presenter?.addNewContact(name: nameTextField.text!, surname: surnameTextField.text!)
+        navigationController?.popViewController(animated: true)
     }
     
     func setupUI () {

@@ -14,7 +14,7 @@ class TableContactRouter: TableContactRouterProtocol {
     var context: NSManagedObjectContext?
 
     var view: TableContactViewProtocol? = ContactTableVC()
-    var interactor: TableContactInteractorProtocol? = TableContactInteractor()
+    var interactor: TableContactInteractorProtocol?
     var presenter: TableContactPresenterProtocol? 
 
     var navigationController: UINavigationController?
@@ -24,6 +24,8 @@ class TableContactRouter: TableContactRouterProtocol {
         self.context = context
         
         presenter = TableContactPresenter(context: context)
+        
+        interactor = TableContactInteractor(context: context)
         
         view?.presenter = presenter
         presenter?.view = view

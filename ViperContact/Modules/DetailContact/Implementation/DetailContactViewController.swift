@@ -20,12 +20,8 @@ class DetailContactViewController: UIViewController, DetailContactViewProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Detail"
-        
-        // TODO: Fix this to do it with presenter
-        nameLabel.text = contactDetail?.name
-        surnameLabel.text = contactDetail?.surname
+
+        setupUIWithPresenter(contactDetail: contactDetail!)
         
     }
 
@@ -33,4 +29,29 @@ class DetailContactViewController: UIViewController, DetailContactViewProtocol {
         super.didReceiveMemoryWarning()
     }
     
+    func setupUIWithPresenter ( contactDetail: Contact ) {
+        
+        title = "Detail"
+        nameLabel.text = contactDetail.name
+        surnameLabel.text = contactDetail.surname
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
