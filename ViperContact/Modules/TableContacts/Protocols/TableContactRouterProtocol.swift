@@ -17,4 +17,6 @@ protocol TableContactRouterProtocol {
     
     func navigationToAddNewContact ()
     
+    func navigationToDetail(contactDetail: Contact)
+    
 }

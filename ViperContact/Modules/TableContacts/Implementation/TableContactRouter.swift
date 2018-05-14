@@ -34,4 +34,13 @@ class TableContactRouter: TableContactRouterProtocol {
         navigationController?.pushViewController(addNewContactRouter.view as! AddNewContactViewController, animated: true)
     }
     
+    func navigationToDetail(contactDetail: Contact) {
+        let detailContacRouter = DetailContactRouter()
+        
+        detailContacRouter.view?.contactDetail = contactDetail
+
+        navigationController?.pushViewController(detailContacRouter.view as! DetailContactViewController, animated: true)
+        
+    }
+    
 }

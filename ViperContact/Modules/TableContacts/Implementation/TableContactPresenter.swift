@@ -18,4 +18,8 @@ class TableContactPresenter: TableContactPresenterProtocol {
         router?.navigationToAddNewContact()
     }
 
+    func navigationToDetail(contactDetail: Contact) {
+        router?.navigationToDetail(contactDetail: contactDetail)
+    }
+    
 }

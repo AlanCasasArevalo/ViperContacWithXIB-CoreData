@@ -49,9 +49,31 @@ class ContactTableVC: UITableViewController, TableContactViewProtocol {
         
         return cell!
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dummyContactDetail = Contact(name: "Test0", surname: "Test0")
+        
+        presenter?.navigationToDetail(contactDetail: dummyContactDetail)
+    }
 
     @objc func addNewPersonAction (){
         presenter?.navigationToAddNewContact()
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
