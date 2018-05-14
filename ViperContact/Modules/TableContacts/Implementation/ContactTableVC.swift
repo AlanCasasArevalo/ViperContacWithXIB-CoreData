@@ -19,7 +19,10 @@ class ContactTableVC: UITableViewController, TableContactViewProtocol {
         
         title = "Contacts"
         
+        let addNewPersonButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewPersonAction))
 
+        navigationItem.rightBarButtonItem = addNewPersonButton
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,4 +50,8 @@ class ContactTableVC: UITableViewController, TableContactViewProtocol {
         return cell!
     }
 
+    @objc func addNewPersonAction (){
+        presenter?.navigationToAddNewContact()
+    }
+    
 }

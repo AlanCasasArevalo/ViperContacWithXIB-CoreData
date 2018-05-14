@@ -9,10 +9,13 @@
 import Foundation
 
 class TableContactPresenter: TableContactPresenterProtocol {
-
+    
     var view: TableContactViewProtocol?
     var interactor: TableContactInteractorProtocol?
     var router: TableContactRouterProtocol?
     
-    
+    func navigationToAddNewContact() {
+        router?.navigationToAddNewContact()
+    }
+
 }

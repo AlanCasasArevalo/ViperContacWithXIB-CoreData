@@ -28,4 +28,10 @@ class TableContactRouter: TableContactRouterProtocol {
         navigationController = UINavigationController(rootViewController: view as! ContactTableVC)
     }
     
+    func navigationToAddNewContact() {
+        let addNewContactRouter = AddNewContactRouter()
+        
+        navigationController?.pushViewController(addNewContactRouter.view as! AddNewContactViewController, animated: true)
+    }
+    
 }

@@ -13,4 +13,6 @@ protocol TableContactPresenterProtocol {
     var interactor: TableContactInteractorProtocol? { get set }
     var router: TableContactRouterProtocol? { get set }
 
+    func navigationToAddNewContact()     
+
 }

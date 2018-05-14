@@ -20,6 +20,17 @@
 		E576343920A98808001D237D /* TableContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576343820A98808001D237D /* TableContactPresenter.swift */; };
 		E576343B20A98827001D237D /* TableContactInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576343A20A98827001D237D /* TableContactInteractor.swift */; };
 		E576343D20A9884D001D237D /* TableContactDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576343C20A9884D001D237D /* TableContactDataManager.swift */; };
+		E576344120A98C78001D237D /* AddNewContactViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576344020A98C77001D237D /* AddNewContactViewProtocol.swift */; };
+		E576344320A98C86001D237D /* AddNewContactRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576344220A98C86001D237D /* AddNewContactRouterProtocol.swift */; };
+		E576344520A98C98001D237D /* AddNewContactInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576344420A98C98001D237D /* AddNewContactInteractorProtocol.swift */; };
+		E576344720A98CB1001D237D /* AddNewContactPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576344620A98CB1001D237D /* AddNewContactPresenterProtocol.swift */; };
+		E576344920A98CC5001D237D /* AddNewContactDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576344820A98CC5001D237D /* AddNewContactDataManagerProtocol.swift */; };
+		E576344C20A98D97001D237D /* AddNewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576344A20A98D97001D237D /* AddNewContactViewController.swift */; };
+		E576344D20A98D97001D237D /* AddNewContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E576344B20A98D97001D237D /* AddNewContactViewController.xib */; };
+		E576344F20A98DD8001D237D /* AddNewContactInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576344E20A98DD8001D237D /* AddNewContactInteractor.swift */; };
+		E576345120A98DF0001D237D /* AddNewContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576345020A98DF0001D237D /* AddNewContactPresenter.swift */; };
+		E576345320A98E14001D237D /* AddNewContactRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576345220A98E14001D237D /* AddNewContactRouter.swift */; };
+		E576345520A98E3F001D237D /* AddNewContactDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E576345420A98E3F001D237D /* AddNewContactDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +49,17 @@
 		E576343820A98808001D237D /* TableContactPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableContactPresenter.swift; sourceTree = "<group>"; };
 		E576343A20A98827001D237D /* TableContactInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableContactInteractor.swift; sourceTree = "<group>"; };
 		E576343C20A9884D001D237D /* TableContactDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableContactDataManager.swift; sourceTree = "<group>"; };
+		E576344020A98C77001D237D /* AddNewContactViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewContactViewProtocol.swift; sourceTree = "<group>"; };
+		E576344220A98C86001D237D /* AddNewContactRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactRouterProtocol.swift; sourceTree = "<group>"; };
+		E576344420A98C98001D237D /* AddNewContactInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactInteractorProtocol.swift; sourceTree = "<group>"; };
+		E576344620A98CB1001D237D /* AddNewContactPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactPresenterProtocol.swift; sourceTree = "<group>"; };
+		E576344820A98CC5001D237D /* AddNewContactDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactDataManagerProtocol.swift; sourceTree = "<group>"; };
+		E576344A20A98D97001D237D /* AddNewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactViewController.swift; sourceTree = "<group>"; };
+		E576344B20A98D97001D237D /* AddNewContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewContactViewController.xib; sourceTree = "<group>"; };
+		E576344E20A98DD8001D237D /* AddNewContactInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactInteractor.swift; sourceTree = "<group>"; };
+		E576345020A98DF0001D237D /* AddNewContactPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactPresenter.swift; sourceTree = "<group>"; };
+		E576345220A98E14001D237D /* AddNewContactRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactRouter.swift; sourceTree = "<group>"; };
+		E576345420A98E3F001D237D /* AddNewContactDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +160,12 @@
 		E576342620A985FF001D237D /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
+				E576344A20A98D97001D237D /* AddNewContactViewController.swift */,
+				E576344B20A98D97001D237D /* AddNewContactViewController.xib */,
+				E576344E20A98DD8001D237D /* AddNewContactInteractor.swift */,
+				E576345020A98DF0001D237D /* AddNewContactPresenter.swift */,
+				E576345420A98E3F001D237D /* AddNewContactDataManager.swift */,
+				E576345220A98E14001D237D /* AddNewContactRouter.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -145,6 +173,11 @@
 		E576342720A98603001D237D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				E576344020A98C77001D237D /* AddNewContactViewProtocol.swift */,
+				E576344420A98C98001D237D /* AddNewContactInteractorProtocol.swift */,
+				E576344620A98CB1001D237D /* AddNewContactPresenterProtocol.swift */,
+				E576344820A98CC5001D237D /* AddNewContactDataManagerProtocol.swift */,
+				E576344220A98C86001D237D /* AddNewContactRouterProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -228,6 +261,7 @@
 			files = (
 				E576341920A98405001D237D /* LaunchScreen.storyboard in Resources */,
 				E576341620A98405001D237D /* Assets.xcassets in Resources */,
+				E576344D20A98D97001D237D /* AddNewContactViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,17 +272,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E576345320A98E14001D237D /* AddNewContactRouter.swift in Sources */,
+				E576344520A98C98001D237D /* AddNewContactInteractorProtocol.swift in Sources */,
+				E576344320A98C86001D237D /* AddNewContactRouterProtocol.swift in Sources */,
 				E576343720A987E3001D237D /* TableContactRouter.swift in Sources */,
 				E576342D20A98648001D237D /* TableContactPresenterProtocol.swift in Sources */,
+				E576344F20A98DD8001D237D /* AddNewContactInteractor.swift in Sources */,
+				E576344C20A98D97001D237D /* AddNewContactViewController.swift in Sources */,
 				E576343B20A98827001D237D /* TableContactInteractor.swift in Sources */,
 				E576343320A98695001D237D /* TableContactDataManagerProtocol.swift in Sources */,
 				E576342B20A98632001D237D /* TableContactInteractorProtocol.swift in Sources */,
+				E576345520A98E3F001D237D /* AddNewContactDataManager.swift in Sources */,
+				E576344920A98CC5001D237D /* AddNewContactDataManagerProtocol.swift in Sources */,
+				E576344720A98CB1001D237D /* AddNewContactPresenterProtocol.swift in Sources */,
 				E576343920A98808001D237D /* TableContactPresenter.swift in Sources */,
 				E576342F20A9865B001D237D /* TableContactViewProtocol.swift in Sources */,
 				E576343120A98680001D237D /* TableContactRouterProtocol.swift in Sources */,
 				E576340F20A98405001D237D /* AppDelegate.swift in Sources */,
 				E576343520A98776001D237D /* ContactTableVC.swift in Sources */,
+				E576344120A98C78001D237D /* AddNewContactViewProtocol.swift in Sources */,
 				E576343D20A9884D001D237D /* TableContactDataManager.swift in Sources */,
+				E576345120A98DF0001D237D /* AddNewContactPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

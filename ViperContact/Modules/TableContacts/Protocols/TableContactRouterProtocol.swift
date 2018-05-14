@@ -14,4 +14,7 @@ protocol TableContactRouterProtocol {
     var presenter: TableContactPresenterProtocol? { get set }
     
     var navigationController: UINavigationController? { get set }
+    
+    func navigationToAddNewContact ()
+    
 }
